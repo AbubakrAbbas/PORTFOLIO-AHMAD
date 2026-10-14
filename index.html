@@ -1,103 +1,224 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#141414">
-<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
-<title>Ahmad Shahid</title>
-<meta name="description" content="Ahmad Shahid — graphic designer and video editor. Social media, print, logo and brand visuals.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Poppins:wght@300;700&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="img/portrait.webp">
-<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<header class="mono">
-  <a href="#top" class="avail">Available</a>
-  <nav><a href="#top">Home</a><a href="#ribbon">Projects</a><a href="#about">About</a><a href="#contact">Contact</a>
-    <button id="theme" class="tg" type="button" aria-label="Switch to light theme" aria-pressed="false">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><mask id="tgm"><rect width="24" height="24" fill="#fff"/><circle class="mc" cx="24" cy="0" r="7" fill="#000"/></mask><circle class="sc" cx="12" cy="12" r="5.5" fill="currentColor" mask="url(#tgm)"/><path class="rays" d="M12 1.5v2.5M12 20v2.5M1.5 12H4M20 12h2.5M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
-    </button>
-  </nav>
-</header>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#141414" />
+    <script>
+      try {
+        var t = localStorage.getItem("theme");
+        if (t === "light" || t === "dark")
+          document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    </script>
+    <title>Ahmad Shahid</title>
+    <meta
+      name="description"
+      content="Ahmad Shahid — graphic designer and video editor. Social media, print, logo and brand visuals."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Poppins:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" as="image" href="img/portrait.webp" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="mono">
+      <a href="#top" class="avail">Available</a>
+      <nav>
+        <a href="#top">Home</a><a href="#ribbon">Projects</a
+        ><a href="#about">About</a><a href="#contact">Contact</a>
+        <button
+          id="theme"
+          class="tg"
+          type="button"
+          aria-label="Switch to light theme"
+          aria-pressed="false"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <mask id="tgm">
+              <rect width="24" height="24" fill="#fff" />
+              <circle class="mc" cx="24" cy="0" r="7" fill="#000" />
+            </mask>
+            <circle
+              class="sc"
+              cx="12"
+              cy="12"
+              r="5.5"
+              fill="currentColor"
+              mask="url(#tgm)"
+            />
+            <path
+              class="rays"
+              d="M12 1.5v2.5M12 20v2.5M1.5 12H4M20 12h2.5M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              fill="none"
+            />
+          </svg>
+        </button>
+      </nav>
+    </header>
 
-<div id="wipe"></div>
-<div id="intro"><div class="in-row mono"><span>Portfolio</span><span>Graphic designer · Video editor</span></div><div class="in-name"><span><i>Ahmad</i></span><span><i>Shahid</i></span></div><div class="in-row mono"><span>Loading</span><span><b id="inc">0</b>%</span></div><div id="inb"></div></div>
-<script src="js/intro.js"></script>
-<main id="top">
-<div class="hero">
-  <div class="l">
-    <h1><span>Ahmad</span><span class="o">Shahid</span></h1>
-    <div class="role mono">
-      <span><b>Graphic Designer</b></span>
-      <span><b>Video Editor</b></span>
-      <span><b>Social Media Marketing</b></span>
+    <div id="wipe"></div>
+    <div id="intro">
+      <div class="in-row mono">
+        <span>Portfolio</span><span>Graphic designer · Video editor</span>
+      </div>
+      <div class="in-name">
+        <span><i>Ahmad</i></span
+        ><span><i>Shahid</i></span>
+      </div>
+      <div class="in-row mono">
+        <span>Loading</span><span><b id="inc">0</b>%</span>
+      </div>
+      <div id="inb"></div>
     </div>
-  </div>
-  <div class="r">
-    <img src="img/portrait.webp" alt="Ahmad Shahid">
-  </div>
-  </div>
+    <script src="js/intro.js"></script>
+    <main id="top">
+      <div class="hero">
+        <div class="l">
+          <h1><span>Ahmad</span><span class="o">Shahid</span></h1>
+          <div class="role mono">
+            <span><b>Graphic Designer</b></span>
+            <span><b>Video Editor</b></span>
+            <span><b>Social Media Marketing</b></span>
+          </div>
+        </div>
+        <div class="r">
+          <img src="img/portrait.webp" alt="Ahmad Shahid" />
+        </div>
+      </div>
 
-<section id="ribbon" aria-label="Project gallery">
-  <canvas id="rb-canvas"></canvas>
-  <div class="rb-ui">
-    <div class="rb-top mono"><span>Selected work</span><span id="rb-count">01 / 12</span></div>
-    <div class="rb-bot">
-      <div><div class="rb-title" id="rb-title"></div><div class="mono" id="rb-tag" style="margin-top:12px"></div></div>
-      <div class="rb-ctl"><span class="rb-hint mono">Drag · click to open</span><button id="rb-prev" aria-label="Previous project">←</button><button id="rb-next" aria-label="Next project">→</button></div>
+      <section id="ribbon" aria-label="Project gallery">
+        <canvas id="rb-canvas"></canvas>
+        <div class="rb-ui">
+          <div class="rb-top mono">
+            <span>Selected work</span><span id="rb-count">01 / 12</span>
+          </div>
+          <div class="rb-bot">
+            <div>
+              <div class="rb-title" id="rb-title"></div>
+              <div class="mono" id="rb-tag" style="margin-top: 12px"></div>
+            </div>
+            <div class="rb-ctl">
+              <span class="rb-hint mono">Drag · click to open</span
+              ><button id="rb-prev" aria-label="Previous project">←</button
+              ><button id="rb-next" aria-label="Next project">→</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="wrap">
+        <div class="sh mono">
+          <span>01 — About</span><span>Ahmad Shahid</span>
+        </div>
+        <div class="about">
+          <p class="lead rv">
+            I'm a creative <em>Graphic Designer</em> with a passion for
+            transforming ideas into impactful visuals. I combine creativity,
+            asethetics, and attention to detail to create meaningful designs
+            that comminucate effectively and help brands stand out.
+          </p>
+          <div class="facts rv">
+            <div class="f">
+              <span class="mono">Experience</span>
+              <div>
+                <strong>Gujranwala News</strong
+                ><span class="s">2024 — Now</span>
+              </div>
+            </div>
+            <div class="f">
+              <span class="mono">Education</span>
+              <div>
+                <strong>BSCS Honors</strong
+                ><span class="s">University of Central Punjab</span>
+              </div>
+            </div>
+            <div class="f">
+              <span class="mono">Diploma</span>
+              <div>
+                <strong>Graphics Designing</strong
+                ><span class="s">DigiSkills.pk</span>
+              </div>
+            </div>
+            <div class="f">
+              <span class="mono">Software</span>
+              <div class="tools">
+                <i>Photoshop</i><i>Illustrator</i><i>CorelDRAW</i
+                ><i>Premiere Pro</i><i>After Effects</i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="work" class="wrap">
+        <div class="sh mono">
+          <span>02 — Projects</span><span id="count"></span>
+        </div>
+        <div id="projects"></div>
+      </section>
+
+      <section class="wrap">
+        <div class="sh mono">
+          <span>03 — Services</span><span>What I do</span>
+        </div>
+        <div class="svc rv">
+          <div><small class="mono">01</small>Video editing</div>
+          <div><small class="mono">02</small>LCD digital menu</div>
+          <div><small class="mono">03</small>Logo animation</div>
+          <div><small class="mono">04</small>Menu design</div>
+          <div><small class="mono">05</small>Business card</div>
+          <div><small class="mono">06</small>Flyers / posters</div>
+        </div>
+      </section>
+
+      <section id="contact" class="wrap" style="border-bottom: 0">
+        <div class="sh mono">
+          <span>04 — Contact</span><span class="avail">Available for work</span>
+        </div>
+        <div class="contact rv">
+          <div class="big">Let’s<br />work <span>together</span></div>
+        </div>
+        <div class="cinfo rv">
+          <a href="tel:+923476000403"
+            ><small class="mono">Phone</small>+92 347 6000403</a
+          ><a href="mailto:ahmad6000403@gmail.com"
+            ><small class="mono">Email</small>ahmad6000403@gmail.com</a
+          >
+        </div>
+        <footer class="mono">
+          <span>© 2026 Ahmad Shahid. All rights reserved.</span
+          ><span>Graphic design · Video editing · Social media</span
+          ><a href="#top">Back to top ↑</a>
+        </footer>
+        <p class="copy mono">
+          All designs, videos and logos shown on this page were created by Ahmad
+          Shahid for his clients. Brand names, logos and trademarks belong to
+          their respective owners and appear for portfolio purposes only. Please
+          do not copy, reuse or redistribute this work without written
+          permission.
+        </p>
+      </section>
+    </main>
+
+    <div id="vb">
+      <span class="x mono">Close ✕</span
+      ><video playsinline controls loop></video>
     </div>
-  </div>
-</section>
+    <div id="lb"><span class="x mono">Close ✕</span><img alt="" /></div>
 
-<section id="about" class="wrap">
-  <div class="sh mono"><span>01 — About</span><span>Ahmad Shahid</span></div>
-  <div class="about">
-    <p class="lead rv">I’m a graphic designer and video editor with <em>2 years of experience</em> in design and <em>2 years</em> in video editing and social media marketing. I turn briefs into bold, scroll-stopping visuals, from brand posts and menus to reels and logos, that help brands stand out and grow.</p>
-    <div class="facts rv">
-      <div class="f"><span class="mono">Experience</span><div><strong>Gujranwala News</strong><span class="s">2024 — Now</span></div></div>
-      <div class="f"><span class="mono">Education</span><div><strong>BSCS Honors</strong><span class="s">University of Central Punjab</span></div></div>
-      <div class="f"><span class="mono">Diploma</span><div><strong>Graphics Designing</strong><span class="s">DigiSkills.pk</span></div></div>
-      <div class="f"><span class="mono">Software</span><div class="tools"><i>Photoshop</i><i>Illustrator</i><i>CorelDRAW</i><i>Premiere Pro</i><i>After Effects</i></div></div>
-    </div>
-  </div>
-</section>
-
-<section id="work" class="wrap">
-  <div class="sh mono"><span>02 — Projects</span><span id="count"></span></div>
-  <div id="projects"></div>
-</section>
-
-<section class="wrap">
-  <div class="sh mono"><span>03 — Services</span><span>What I do</span></div>
-  <div class="svc rv">
-    <div><small class="mono">01</small>Video editing</div>
-    <div><small class="mono">02</small>LCD digital menu</div>
-    <div><small class="mono">03</small>Logo animation</div>
-    <div><small class="mono">04</small>Menu design</div>
-    <div><small class="mono">05</small>Business card</div>
-    <div><small class="mono">06</small>Flyers / posters</div>
-  </div>
-</section>
-
-<section id="contact" class="wrap" style="border-bottom:0">
-  <div class="sh mono"><span>04 — Contact</span><span class="avail">Available for work</span></div>
-  <div class="contact rv">
-    <div class="big">Let’s<br>work <span>together</span></div>
-  </div>
-  <div class="cinfo rv"><a href="tel:+923476000403"><small class="mono">Phone</small>+92 347 6000403</a><a href="mailto:ahmad6000403@gmail.com"><small class="mono">Email</small>ahmad6000403@gmail.com</a></div>
-  <footer class="mono"><span>© 2026 Ahmad Shahid. All rights reserved.</span><span>Graphic design · Video editing · Social media</span><a href="#top">Back to top ↑</a></footer>
-  <p class="copy mono">All designs, videos and logos shown on this page were created by Ahmad Shahid for his clients. Brand names, logos and trademarks belong to their respective owners and appear for portfolio purposes only. Please do not copy, reuse or redistribute this work without written permission.</p>
-</section>
-</main>
-
-<div id="vb"><span class="x mono">Close ✕</span><video playsinline controls loop></video></div>
-<div id="lb"><span class="x mono">Close ✕</span><img alt=""></div>
-
-<script src="js/main.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-<script src="js/ribbon.js"></script>
-</body>
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="js/ribbon.js"></script>
+  </body>
 </html>
